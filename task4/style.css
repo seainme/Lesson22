@@ -9,25 +9,21 @@ html {
   height: 3em;
   padding: 1em;
   background-color: #eee;
-  justify-content: center;
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 .fa-bars {
   font-size: 2em;
-
 }
 .button {
-  border-radius: none;
   padding: 0;
   border: none;
-  background-color: none;
+
   cursor: pointer;
 }
 .nav-list {
   padding: 0;
-   width: 20%;
+  width: 20%;
   padding: 0.5em;
 }
 .nav-list-item {
@@ -39,23 +35,22 @@ html {
 }
 .nav-list-link {
   display: inline-block;
-  padding: 0 0.5em;
+  padding: 0.5em;
   color: white;
+  text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
 }
-@media screen and (max-width:600px) {
-    .nav-list{
-        visibility: hidden;
-    }
-    
+@media screen and (max-width: 600px) {
+  .nav-list {
+    visibility: hidden;
+  }
 }
-@media screen and (min-width:600px) {
-    .fa-bars{
-        visibility: hidden;
-    }
-    
+@media screen and (min-width: 600px) {
+  .fa-bars {
+    visibility: hidden;
+  }
 }
