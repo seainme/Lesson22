@@ -25,6 +25,7 @@ html {
   padding: 0;
   width: 20%;
   padding: 0.5em;
+  
 }
 .nav-list-item {
   background-color: #808080;
@@ -34,10 +35,11 @@ html {
   list-style-type: none;
 }
 .nav-list-link {
+    
   display: inline-block;
   padding: 0.5em;
   color: white;
-  text-align: center;
+  
   text-decoration: none;
   text-overflow: ellipsis;
   overflow: hidden;
