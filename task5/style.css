@@ -23,13 +23,14 @@ img {
 }
 .main {
   display: flex;
+  flex-grow: 1;
 }
 .navigation {
   width: 20%;
   padding: 0.5em;
 }
 .section {
-  width: 60%;
+  /* width: 60%; */
   font-size: 1.25em;
   padding: 0.5em;
 }
@@ -52,9 +53,9 @@ img {
 }
 .nav-list {
   padding: 0;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .nav-list-item {
   height: 2em;
@@ -63,6 +64,7 @@ img {
   list-style-type: none;
   line-height: 2em;
   color: white;
+  display: flex;
 }
 .nav-list-link {
   color: white;
@@ -88,28 +90,41 @@ img {
     width: 100%;
   }
   .news {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
   .navigation {
     width: 100%;
   }
 }
-@media screen and (max-width: 900px) {
-  .navigation {
-    display: flex;
-    flex-direction: column;
 
-    flex-grow: 1;
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .main {
+    display: block;
   }
-  .section {
+  .nav-text {
     display: flex;
-    flex-direction: column;
-    flex-grow: 5;
+  }
+  .navigation {
+    width: 20%;
   }
   .news {
-    display: flex;
     width: 100%;
-    flex-grow: 0;
   }
+}
+@media screen and (min-width:901px) {
+    .nav-text {
+        display: flex;
+        width: 80%;
+    }
+    .navigation {
+        flex-grow: 1;
+        width: 20%;
+    }
+    .news {
+        width: 20%;
+    }
+    .section {
+        flex-grow: 3;
+        width: 60%;
+    }
 }
